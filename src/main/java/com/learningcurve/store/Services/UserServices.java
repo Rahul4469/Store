@@ -81,7 +81,6 @@ public class UserServices {
     public void fetchProducts(){
         var product = new Product();
         product.setName("product");
-
         var matcher = ExampleMatcher.matching().withStringMatcher(ExampleMatcher.StringMatcher.CONTAINING);
         var example =  Example.of(product, matcher);
         var products = productRepository.findAll(example);
