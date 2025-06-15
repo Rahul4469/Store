@@ -49,6 +49,13 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
 		</dependency>
+		<!--Lombok-->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.38</version>
+			<scope>provided</scope>
+		</dependency>
 <!--Spring data JPA-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -70,6 +77,7 @@
 			<artifactId>flyway-mysql</artifactId>
 		</dependency>
 
+
 	</dependencies>
 
 	<build>
@@ -82,7 +90,7 @@
 					<url>jdbc:mysql://localhost:3306/store?createDatabaseIfNotExist=true</url>
 					<user>root</user>
 					<password>Rax@7692*#Rc</password>
-					<cleanDisabled>true</cleanDisabled>
+					<cleanDisabled>false</cleanDisabled>
 				</configuration>
 			</plugin>
 
